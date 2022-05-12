@@ -7,5 +7,99 @@
     <link rel="stylesheet" href="./index.css" />
     <title>CSS Mem Slider</title>
   </head>
-  <body></body>
+  <body>
+    <div class="root">
+      <section class="slider">
+        <input
+          type="radio"
+          id="slide-1"
+          name="slider-input"
+          class="slider__input"
+          checked
+        />
+        <input
+          type="radio"
+          id="slide-2"
+          name="slider-input"
+          class="slider__input"
+        />
+        <input
+          type="radio"
+          id="slide-3"
+          name="slider-input"
+          class="slider__input"
+        />
+        <input
+          type="radio"
+          id="slide-4"
+          name="slider-input"
+          class="slider__input"
+        />
+        <ul class="list slides">
+          <li class="slide">
+            <figure class="slide__figure">
+              <img
+                src="./img/image1.jpg"
+                alt="Мем 1"
+                class="slide__photo slide__photo_1"
+              />
+              <figcaption class="slide__caption slide__caption_1">
+                Мем 1
+              </figcaption>
+            </figure>
+          </li>
+          <li class="slide">
+            <figure class="slide__figure">
+              <img
+                src="./img/image2.jpg"
+                alt="Мем 2"
+                class="slide__photo slide__photo_2"
+              />
+              <figcaption class="slide__caption slide__caption_2">
+                Мем 2
+              </figcaption>
+            </figure>
+          </li>
+          <li class="slide">
+            <figure class="slide__figure">
+              <img
+                src="./img/image3.jpg"
+                alt="Мум 4"
+                class="slide__photo slide__photo_3"
+              />
+              <figcaption class="slide__caption slide__caption_3">
+                Мем 3
+              </figcaption>
+            </figure>
+          </li>
+          <li class="slide">
+            <figure class="slide__figure">
+              <img
+                src="./img/image4.jpg"
+                alt="Мем 4"
+                class="slide__photo slide__photo_4"
+              />
+              <figcaption class="slide__caption slide__caption_4">
+                Мем 5
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+        <ul class="list slider__nav">
+          <li class="slider__nav-item">
+            <label for="slide-1" class="slider__nav-button"></label>
+          </li>
+          <li class="slider__nav-item">
+            <label for="slide-2" class="slider__nav-button"></label>
+          </li>
+          <li class="slider__nav-item">
+            <label for="slide-3" class="slider__nav-button"></label>
+          </li>
+          <li class="slider__nav-item">
+            <label for="slide-4" class="slider__nav-button"></label>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </body>
 </html>
