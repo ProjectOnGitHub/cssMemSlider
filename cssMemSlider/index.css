@@ -3,7 +3,7 @@
   box-sizing: border-box;
 
   margin: 0;
-  padding: 0 1rem;
+  padding: 0 2rem;
   font: normal 1rem/1 Arial, sans-serif;
 
   display: flex;
@@ -35,6 +35,21 @@
     'slides slides'
     'texts nav';
   overflow: hidden;
+  align-content: space-between;
+}
+
+@media screen and (max-width: 620px) {
+  .slider {
+    grid-template-areas:
+      'slides'
+      'nav'
+      'texts';
+    height: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr min-content min-content;
+    align-content: space-between;
+    grid-template-rows: repeat(3, min-content);
+  }
 }
 
 .slider__input {
@@ -49,6 +64,9 @@
   align-self: end;
   z-index: 3;
   background-color: #fff;
+  justify-self: center;
+  align-items: center;
+  height: 100%;
 }
 
 .slider__nav-item {
@@ -118,17 +136,17 @@
   overflow: hidden;
   width: 400%;
   height: 100%;
+  align-items: center;
 }
 
 .text {
   width: 25%;
   margin: 0;
   background-color: rgb(256, 256, 256);
-  padding: 0.5rem 0;
   font-size: 1.1rem;
   font-weight: bold;
   z-index: 2;
-  transition: 1s;
+  transition: 1.5s;
 }
 
 #slide-1:checked ~ .slides > .slide_1 {
@@ -147,33 +165,20 @@
   margin-left: -75%;
 }
 
-@keyframes textAnimation {
-  0% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
 #slide-1:checked ~ .texts > .text_1 {
   margin-left: 0;
-  animation: textAnimation;
 }
 
 #slide-2:checked ~ .texts > .text_1 {
   margin-left: -25%;
-  animation: textAnimation;
 }
 
 #slide-3:checked ~ .texts > .text_1 {
   margin-left: -50%;
-  animation: textAnimation;
 }
 
 #slide-4:checked ~ .texts > .text_1 {
   margin-left: -75%;
-  animation: textAnimation;
 }
 
 #slide-1:checked
