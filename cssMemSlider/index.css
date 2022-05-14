@@ -73,13 +73,15 @@
   height: 40%;
   border: 0.01rem solid slategray;
   background-color: lightgray;
-  opacity: 0.8;
   transition: 0.5s;
 }
 
 .slider__nav-button-marker:hover {
-  opacity: 1;
   transform: scale(1.1);
+}
+
+.slider__nav-button-marker:active {
+  transform: scale(0.9);
 }
 
 .slides {
