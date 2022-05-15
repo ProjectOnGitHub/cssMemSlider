@@ -27,7 +27,7 @@
   max-width: 37.5rem;
   max-height: 31.25rem;
   width: 100%;
-  height: 100%;
+  height: auto;
   border: 0.6rem solid #fff;
   background-color: #fff;
   grid-template-rows: repeat(2, 1fr);
@@ -44,7 +44,6 @@
       'slides'
       'nav'
       'texts';
-    height: auto;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr min-content min-content;
     align-content: space-between;
@@ -67,7 +66,7 @@
   background-color: #fff;
   justify-self: center;
   align-items: center;
-  height: 100%;
+  height: auto;
 }
 
 .slider__nav-item {
@@ -112,7 +111,7 @@
   grid-area: slides;
   display: flex;
   width: 400%;
-  height: 100%;
+  height: auto;
   transition: 1s;
 }
 
